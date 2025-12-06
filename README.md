@@ -1,68 +1,79 @@
-**Hi class, welcome to the AOS C111/204 final project!** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+# Wildfire Ignition Classification Project  
+<img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 
-For this project, you will be applying your skills to train a machine learning model using real-world data, then publishing a report on your own website.
+Hi everyone — welcome to my AOS C111/204 final project site!
 
-* To get data for your project, you could:
-  * use **your own data** from a separate research activity
-  * **scour the internet** to find something original, then preprocess it yourself - see the Module Overview on BruinLearn for some resources
-  * browse an archive of data designed for machine learning problems, such as the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/datasets)
+This project applies machine learning methods to a spatial wildfire ignition classification task.  
+Using a synthetic dataset that imitates ignition patterns, a **custom convolutional neural network (CNN)** was trained and benchmarked against **classical machine learning models** including Logistic Regression, Support Vector Machines, Decision Trees, and Random Forests.
 
-* Your report should be written using a scientific structure. [This template page](/project.md) gives an example structure that you could use, but feel free to make it your own. See Bruinlearn for some examples from previous students.
-* To get high marks: **apply things that you learnt about in class**, and **explain your process in the report**, i.e. why you thought this would be interesting, why you decided to use a particular model, the challenges that you faced processing your data, etc.
+The goal was to:
+- build and train ML models,
+- evaluate their predictive performance,
+- explain modelling decisions,
+- and publish all results in a reproducible report.
 
-Your website will be a great addition to your CV, and a place to host future projects too since it doubles as a GitHub repository. The first step is to set up a project website like this one by following the instructions below. 
+This website hosts my final write-up, figures, and associated code.
 
-## How does this website work?
+---
 
-First, check out the Github repository for this site: [https://github.com/alexAOS111204/alexAOS111204.github.io/](https://github.com/alexAOS111204/alexAOS111204.github.io/).
+## 🔍 Project Overview
 
-Using GitHub pages, you can write a website using markdown syntax - the same syntax we use to write comments in Google Colab notebooks. GitHub pages then takes the markdown file and renders it as a web page using a Jekyll theme. The markdown source code for this page [is shown here](https://github.com/alexAOS111204/alexAOS111204.github.io/blob/main/README.md?plain=1).
+### 💡 Why this topic?
+Wildfire behaviour is spatial in nature — ignition spreads across landscapes rather than isolated data points.  
+This makes it a good test case for comparing **deep learning architectures that learn spatial features** against **shallow learning models that operate on flattened inputs**.
 
-## Setting up your Project Website
+### 📌 What I implemented
+✔ Programmatic dataset generation  
+✔ CNN model definition using PyTorch  
+✔ Training with validation tracking  
+✔ Classical ML baselines for comparison  
+✔ Performance metrics:
+- accuracy
+- ROC curves
+- confusion matrices  
+✔ Reported findings and interpretation
 
-### How to copy this site as a template
-1. Create [a GitHub account](https://github.com/)
-2.	Go to [https://github.com/alexAOS111204/alexAOS111204.github.io/](https://github.com/alexAOS111204/alexAOS111204.github.io/) and click *Use this template*, then **Create a new repository**. [![screenshot][1]][1]
-3.	In the box that says *Repository name*, write your **Github username**, followed by **.github.io**, as shown in the screenshot below. Then click **Create repository** at the bottom. [![screenshot][2]][2]
-4.	Go to the *Settings* tab, then click *Pages* (under *Code and automation*). In the *Build and deployment* section, under **Branch**, select "main" and click save (if it isn't already selected). It should look like this: [![screenshot][3]][3]
-5.	Click the *Actions* tab at the top of the page and check that the build and deployment action has finished. Once it has, navigate to **[your username].github.io** to see your site, which should be a copy of this one! If you cannot see an *Actions* tab, just wait a few minutes then go to your URL to check it is live.
+### 📈 Key results
+- The custom CNN achieved the highest accuracy and clearer separation between ignition and non-ignition cases.
+- Traditional models performed reasonably well but struggled when spatial information was flattened away.
+- The experiment demonstrates how **feature representation** influences machine learning performance.
 
-Now you are ready to customize your site! To add your name to the site, go to your repository page on Github, click `_config.yml`, and edit it to replace the temporary title with your name, etc. When we make changes to a project on Github, we have to **commit** the new version of each file. Github keeps track of all the changes we make, making it easy to roll back (i.e. return the project to a previous commit).
+---
 
-[1]: /assets/IMG/instr_new.png
-[2]: /assets/IMG/instr_template.png
-[3]: /assets/IMG/instr_bd.png
+## 📄 Report Access
 
-### How to change the theme (optional)
-1.	You can choose any theme [listed on this page](https://github.com/pages-themes), be aware some do not work as well on mobile devices.
-2.	From GitHub, edit `_config.yml` and replace the `theme:` line with `theme: jekyll-theme-name` where `name` is the name of the theme from the above repository (there are 13 to choose from, when I checked). **For example**, to use the `cayman` theme, use the line `theme: jekyll-theme-cayman`. You can check the *Actions* tab (as in step 5. above) to make sure the site is building successfully.
+You can read my full technical report here:  
+➡️ [Open Project Report](/assets/project_demo.pdf)  
+(or view it under `project.md` if you prefer markdown formatting)
 
-### How to change your site logo (optional)
-1. Some themes, such as `jekyll-theme-minimal`, show a logo. In your repository, upload a logo or profile picture to the `assets/IMG/` directory
-2. Open `_config.yml` and modify the line `logo: /assets/IMG/template_logo.png` to point to your new image
+---
 
-***
+## 💻 Code Access
 
-## Guide to Adding Content
-* Your repository's `README.md` file (the file you are reading now) acts like a home page. Replace its contents with whatever you want the world to see by editing the file on GitHub.
-* If you want to turn this page into a CV or blog, etc., it may be useful to refer to a [guide for writing Markdown](https://www.markdownguide.org/basic-syntax/).
-* You can create other markdown files (.md) in your repository and navigate to them from this page using links, i.e.: [here is a link to another file, `project.md`](project.md)
-* When editing a markdown file on GitHub, it is useful to wrap text by selecting the *Soft wrap* option as shown: ![screenshot](/assets/IMG/instr_wrap.png)
-* If you want to get even more technical, you can also write HTML in your .md files, and GitHub Pages will render it. For example, the image below is displayed by writing the following (edit this file to see!): `<img align="right" width="200" height="200" src="/assets/IMG/template_frog.png">`
-<img align="right" width="337" height="200" src="/assets/IMG/template_frog.png"> 
+My code is available here as a downloadable notebook:  
+➡️ [Download Project Code](/assets/project_code.ipynb)
 
-***
+It contains:
+- data generation routines  
+- model architecture implementation  
+- training loop  
+- evaluation and visualisation
 
-## Delivering your Project
+---
 
-Your final project is delivered in two components: a report and your code.
+## 🌐 How this website works
 
-### Report
+This website is hosted using **GitHub Pages + Markdown**.  
+Markdown files (like this README) automatically render as web pages through Jekyll themes.
 
-Your report should be **delivered via your website**. Submit a link to your website on BruinLearn so that your instructor can browse it to find your report. 
+To explore or modify:
+- Edit `_config.yml` to change title and theme  
+- Update `README.md` to change your homepage  
+- Add more markdown pages for future projects  
 
-To make this simple, you can write the report using a word processor or Latex, then export it as a .pdf file and upload it to the `assets` directory. You can then link to it [like so](/assets/project_demo.pdf). However, you can also type the report directly onto the website using another markdown page - [here is](/project.md) a template for that.
+---
 
-### Code
+## ✨ Final Notes
 
-A link to your code must be submitted on BruinLearn, and the course instructor must be able to download your code to mark it. The code could be in a Google Colab notebook (make sure to *share* the notebook so access is set to **Anyone with the link**), or you could upload the code into a separate GitHub repository, or you could upload the code into the `assets` directory of your website and link to it. 
+This site doubles as a **public portfolio**, so I may expand it with new research, experiments, papers, and visualisations over time.  
+Thanks for visiting — feel free to explore!
