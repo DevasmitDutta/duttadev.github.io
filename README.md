@@ -1,5 +1,7 @@
 # Wildfire Ignition Classification Project  
-<img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+<!-- <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png"> -->
+
+<img width="2816" height="1536" alt="template_logo" src="https://github.com/user-attachments/assets/fb28b5da-20c8-41cf-a859-ebd25b98505a" />
 
 Hi everyone — welcome to my AOS C111/204 final project site!
 
