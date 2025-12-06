@@ -43,7 +43,7 @@ This makes it a good test case for comparing **deep learning architectures that 
 ## 📄 Report Access
 
 You can read my full technical report here:  
-➡️ [Open Project Report](/assets/project_demo.pdf)  
+➡️ [Open Project Report](/assets/Report_Devasmit_Dutta__1_.pdf)  
 (or view it under `project.md` if you prefer markdown formatting)
 
 ---
