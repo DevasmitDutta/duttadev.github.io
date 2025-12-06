@@ -1,5 +1,8 @@
-title: Replace this line with your name
-description: A template for your AOS C111/204 project site.
+title: DEVASMIT DUTTA
+description: Implementation and evaluation of a custom CNN against classical machine
+  learning models for predicting wildfire ignition states from synthetic
+  spatial grids. The project covers dataset creation, architecture design,
+  training workflow, performance analysis, and result visualization.
 logo: /assets/IMG/template_logo.png
 show_downloads: true
 theme: jekyll-theme-modernist
