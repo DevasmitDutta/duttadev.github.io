@@ -46,14 +46,13 @@ This makes it a good test case for comparing **deep learning architectures that 
 
 You can read my full technical report here:  
 ➡️ [Open Project Report](/assets/Report_Devasmit_Dutta__1_.pdf)  
-(or view it under `project.md` if you prefer markdown formatting)
 
 ---
 
 ## 💻 Code Access
 
 My code is available here as a downloadable notebook:  
-➡️ [Download Project Code](/assets/project_code.ipynb)
+➡️ [Download Project Code](https://github.com/DevasmitDutta/duttadev.github.io/blob/main/assets/project_code.ipynb)
 
 It contains:
 - data generation routines  
